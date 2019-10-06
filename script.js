@@ -122,7 +122,7 @@ class WebsiteCrawler {
     this.websiteUrl = websiteUrl;
 
     this.pagesThatIncludeKeyword = [];
-    this.maxPages = 1;
+    this.maxPages = 9;
     this.linksRelativeUpdated = [this.websiteUrl];
     this.lenOfLinks = this.linksRelativeUpdated.length;
 
@@ -185,7 +185,7 @@ function runServer (serializedItem) {
 
 async function controller () {
     const URL = 'https://www.chevron.com';
-    const KEYWORD = 'Richmond';
+    const KEYWORD = 'IoT';
     const websiteCrawler = new WebsiteCrawler(KEYWORD, URL); //grab the first 10 pages that contain the word “IoT”
     await websiteCrawler.walkOnAllPages(URL); //START SEARCHING THE KEYWORD IN ALL LINKS OF ALL PAGES WHICH ARE UPDATED WHEN PASS FROM ONE TO FOLLOWING PAGE...
 

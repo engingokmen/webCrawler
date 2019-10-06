@@ -1,0 +1,24 @@
+{
+  "name": "highlightpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engingokmen/highlight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engingokmen/highlight/issues"
+  },
+  "homepage": "https://github.com/engingokmen/highlight#readme",
+  "dependencies": {
+    "jsdom": "^15.1.1",
+    "node-fetch": "^2.6.0"
+  }
+}
